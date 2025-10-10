@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div style="max-width: 800px; margin: 0 auto; padding: 20px;">
+        <h1 style="font-size: 2.5rem; text-align: center; margin-bottom: 2rem;">Forum Feed</h1>
+        
+        <!-- Forum Post 1 -->
+        <div style="border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 5px;">
+            <h2 style="margin-top: 0; color: #333;">{Topic Title 1}</h2>
+            <p style="color: #666; margin-bottom: 10px;">Posted by {username1} in {category1} • {date1}</p>
+            <p>{Post content preview goes here. This is a sample post discussing various topics related to the forum theme...}</p>
+            <div style="margin-top: 15px;">
+                <span style="color: #888;">{comment_count1} comments • {like_count1} likes</span>
+            </div>
+        </div>
+
+        <!-- Forum Post 2 -->
+        <div style="border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 5px;">
+            <h2 style="margin-top: 0; color: #333;">{Topic Title 2}</h2>
+            <p style="color: #666; margin-bottom: 10px;">Posted by {username2} in {category2} • {date2}</p>
+            <p>{Another interesting discussion starter. This post explores different aspects and invites community opinions on current matters...}</p>
+            <div style="margin-top: 15px;">
+                <span style="color: #888;">{comment_count2} comments • {like_count2} likes</span>
+            </div>
+        </div>
+
+        <!-- Forum Post 3 -->
+        <div style="border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 5px;">
+            <h2 style="margin-top: 0; color: #333;">{Topic Title 3}</h2>
+            <p style="color: #666; margin-bottom: 10px;">Posted by {username3} in {category3} • {date3}</p>
+            <p>{Question about specific technical issues. Looking for help from experienced members who might have encountered similar problems...}</p>
+            <div style="margin-top: 15px;">
+                <span style="color: #888;">{comment_count3} comments • {like_count3} likes</span>
+            </div>
+        </div>
+
+        <!-- Forum Post 4 -->
+        <div style="border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 5px;">
+            <h2 style="margin-top: 0; color: #333;">{Topic Title 4}</h2>
+            <p style="color: #666; margin-bottom: 10px;">Posted by {username4} in {category4} • {date4}</p>
+            <p>{Announcement about upcoming events or changes. Important information that all community members should be aware of...}</p>
+            <div style="margin-top: 15px;">
+                <span style="color: #888;">{comment_count4} comments • {like_count4} likes</span>
+            </div>
+        </div>
+
+        <!-- Forum Post 5 -->
+        <div style="border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 5px;">
+            <h2 style="margin-top: 0; color: #333;">{Topic Title 5}</h2>
+            <p style="color: #666; margin-bottom: 10px;">Posted by {username5} in {category5} • {date5}</p>
+            <p>{General discussion thread for casual conversations and off-topic chats. Perfect for getting to know other community members...}</p>
+            <div style="margin-top: 15px;">
+                <span style="color: #888;">{comment_count5} comments • {like_count5} likes</span>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Django Page</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 1px solid #ddd;">
+        <div>
+            <h1 style="margin: 0;">Welcome to {Forum Name}!</h1>
+        </div>
+        <div style="text-align: right;">
+            <span style="font-weight: bold;">{username}</span>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav style="display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; background-color: #f5f5f5; border-bottom: 1px solid #ddd;">
+        <div style="display: flex; gap: 20px;">
+            <a href="#" style="text-decoration: none; padding: 8px 16px; border: 1px solid #ccc; border-radius: 4px;">Main Page</a>
+            <a href="#" style="text-decoration: none; padding: 8px 16px; border: 1px solid #ccc; border-radius: 4px;">Essential Info</a>
+            <a href="#" style="text-decoration: none; padding: 8px 16px; border: 1px solid #ccc; border-radius: 4px;">Make Post</a>
+        </div>
+        
+        <!-- Search Bar -->
+        <div>
+            <input type="text" placeholder="Search..." style="padding: 8px 12px; border: 1px solid #ccc; border-radius: 4px; width: 250px;">
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div style="padding: 20px;">
+        {% block body %}
+        {% endblock %}
+    </div>
+</body>
+</html>
+    
